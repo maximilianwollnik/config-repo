@@ -1,11 +1,14 @@
 server:
   port: 8761
-  address: maximilianwollnik.de
 security:
   user:
     password: ${eureka.password}
 
 eureka:
+  instance:
+    hostname: maximilianwollnik.de
+  serviceUrl:
+      defaultZone: http://maximilianwollnik.de:8761/eureka/
   client:
     registerWithEureka: false
     fetchRegistry: false
