@@ -1,0 +1,42 @@
+info:
+  build:
+    artifact: @project.artifactId@
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@ ${spring.profiles.active}
+    timestamp: ${timestamp}
+
+spring:
+  mail:
+    host: ${MAIL.HOST}
+    username: ${MAIL.USER}
+    password: ${MAIL.PASSWORD}
+    properties: 
+      mail:
+        smtp: 
+          auth: true
+          socketFactory:
+            port: ${MAIL.PORT}
+            fallback: false
+
+security:
+  basic: 
+    enabled: false
+  user: 
+    name: ${MAIL.USER}
+    password: ${MAIL.PASSWORD}
+
+endpoints:
+  autoconfig:
+    enabled: false
+  beans:
+    enabled: false
+  configprops:
+    enabled: false
+  dump:
+    enabled: false
+  env:
+    enabled: false
+
+logging:
+  file: /root/logs/application.log
