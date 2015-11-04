@@ -5,8 +5,6 @@ security:
     password: ${eureka.password}
 
 eureka:
-  instance:
-    hostname: maximilianwollnik.de
   serviceUrl:
       defaultZone: http://maximilianwollnik.de:8761/eureka/
   client:
