@@ -1,5 +1,6 @@
 server:
   port: 8761
+  address: maximilianwollnik.de
 security:
   user:
     password: ${eureka.password}
