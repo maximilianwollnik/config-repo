@@ -4,13 +4,6 @@ server:
 eureka:
   client:
     enabled: false
-    
-info:
-  build.artifact: "@project.artifactId@"
-  build.name: "@project.name@"
-  build.description: "@project.description@"
-  build.version: "@project.version@ {spring.profiles.active}"
-  build.timestamp: ${timestamp}
 
 spring:
   mail:
