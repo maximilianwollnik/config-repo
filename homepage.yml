@@ -6,12 +6,11 @@ eureka:
     enabled: false
     
 info:
-  build:
-    artifact: ${project.artifactId}
-    name: ${project.name}
-    description: ${project.description}
-    version: "${project.version} ${spring.profiles.active}"
-    timestamp: ${timestamp}
+  build.artifact: "@project.artifactId@"
+  build.name: "@project.name@"
+  build.description: "@project.description@"
+  build.version: "@project.version@ {spring.profiles.active}"
+  build.timestamp: ${timestamp}
 
 spring:
   mail:
