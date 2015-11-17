@@ -34,11 +34,9 @@ endpoints:
     enabled: false
   dump:
     enabled: false
-  env:
-    enabled: false
 
 logging:
-  file: /root/logs/application.log
+    file: /root/logs/application.log
 
 ---
 
