@@ -1,8 +1,0 @@
-info:
-  description: Spring Cloud Configuration
-
----
-spring:
-  profiles: development
-logging:
-  file: /tmp/aaa.log
