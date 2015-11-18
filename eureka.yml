@@ -3,7 +3,10 @@ server:
 security:
   user:
     password: ${eureka.password}
-
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    com.netflix.eureka: 'OFF'
 eureka:
   instance:
     hostname: maximilianwollnik.de
