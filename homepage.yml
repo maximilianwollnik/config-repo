@@ -1,10 +1,6 @@
 server:
   port: 8080
 
-eureka:
-  client:
-    enabled: false
-
 spring:
   mail:
     host: ${MAIL.HOST}
@@ -58,18 +54,3 @@ spring:
     profiles: release
 server:
   port: 9000
-  
-eureka:
-  password: '{cipher}AQCp5ZjbYH7zgAJbnDHQQostob3aU+mTPYq90uBdJsYV8YTqLgk+jnnAh3EYZXu66fdLC2TbO9reWwM8GFNhWg4vcX/RdUFd86mcqOTbuhVISGPhzF5hmtu0w8LM9pZY7RoKvaLBaxI5y0LpBx2P8jj5bjdDPDQqvrDrzKJkrxj7WSmU7AE0F6ulB+sHaJu7Oc1XUpNlwNRz2LOyCez5FMfeltbxAzebQr17A6EFe2BqSD6U45sPRs6uLyBD1zg5s6l9adaL1phv77IyF9Ho7btVFAKU3EJijNOdneqz5lAgHeN8f4tnQi9bIZ9Jh7rQHNwPhrhyta3oMU2503KERGRZdpLn0jJNblLZ/0kHDjjzQZN9wCILGiaLWhiWUPzdI/g='
-  client:
-    enabled: true
-    serviceUrl:
-      defaultZone: ${EUREKAPROTOCOL}://${EUREKAUSER}:${eureka.password}@${EUREKAURI}:${EUREKAPORT}/eureka/
-  instance:
-    hostname: maximilianwollnik.de
-    nonSecurePort: ${server.port}
-    leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: /info
-    healthCheckUrlPath: /health
-    metadataMap:
-      instanceId: ${spring.application.name}:${server.port}
