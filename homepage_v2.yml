@@ -12,3 +12,8 @@ spring:
       port: 27017
       host: maximilianwollnik.de
       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
