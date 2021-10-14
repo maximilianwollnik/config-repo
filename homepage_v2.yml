@@ -17,3 +17,7 @@ management:
     web:
       exposure:
         include: info
+
+logging:
+  level:
+    root: INFO
