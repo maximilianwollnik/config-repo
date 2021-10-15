@@ -21,3 +21,11 @@ management:
 logging:
   level:
     root: INFO
+
+---
+
+spring:
+    profiles: development
+logging:
+  level:
+    root: DEBUG
