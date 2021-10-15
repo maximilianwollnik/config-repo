@@ -20,7 +20,9 @@ management:
 
 logging:
   level:
-    root: INFO
+    de:
+      maximilianwollnik:
+        homepage: INFO
 
 ---
 
@@ -28,4 +30,6 @@ spring:
     profiles: development
 logging:
   level:
-    root: DEBUG
+    de:
+      maximilianwollnik:
+        homepage: DEBUG
