@@ -8,9 +8,9 @@ spring:
     mongodb:
       username: writer
       password: '{cipher}AQBCnDmI5fJ+ptkzvajMjyJGN4IZb6YYzHVfBGUERuowe1QLOz0MrhUgV4JYqhOxFV8PHflxSOF34dtchVsVnZ7IPFjX9QQa8sKbFSqKZGLLYhpWs6HAIfpo15Z+b2+cwmhYlDRs8vB1cNJaXdIpyGa7z4aaleR0/Ok0Yu1uNzSDtXFBefMWOlS3YZ5GvaAic31bOEPJyoCtihVJc+/76yRRppVEoud1iwwTc99jEDzdS4XBEgxiHMPiPcZfZijzGmiMSu8DUeOH+rwiTk/nW7Q8UVdY0pHApXIFddNm65jeWIedm/ma8nujVzREsoVaL1yPSb29aZW8em285GeBC5qhCRwAJ8yYJMEXg1PiL37sgnVz483TlxtPxg9K8q2Jz7A='
-      database: homepage_v2_development
+      database: homepage_v2_production
       port: 27017
-      host: maximilianwollnik.de
+      host: mongodb
       
 management:
   endpoints:
@@ -28,6 +28,11 @@ logging:
 
 spring:
     profiles: development
+    data:
+    mongodb:
+      database: homepage_v2_development
+      port: 27017
+      host: maximilianwollnik.de
 logging:
   level:
     de:
