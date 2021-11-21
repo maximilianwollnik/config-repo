@@ -1,5 +1,5 @@
 server:
-  port: 1234
+  port: 9000
   error:
     path: /error
     
@@ -33,6 +33,8 @@ spring:
       database: homepage_v2_development
       port: 27017
       host: maximilianwollnik.de
+server:
+  port: 1234
 logging:
   level:
     de:
