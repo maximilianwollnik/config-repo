@@ -7,7 +7,7 @@ spring:
   data:
     mongodb:
       username: writer
-      password: '{cipher}AQBCnDmI5fJ+ptkzvajMjyJGN4IZb6YYzHVfBGUERuowe1QLOz0MrhUgV4JYqhOxFV8PHflxSOF34dtchVsVnZ7IPFjX9QQa8sKbFSqKZGLLYhpWs6HAIfpo15Z+b2+cwmhYlDRs8vB1cNJaXdIpyGa7z4aaleR0/Ok0Yu1uNzSDtXFBefMWOlS3YZ5GvaAic31bOEPJyoCtihVJc+/76yRRppVEoud1iwwTc99jEDzdS4XBEgxiHMPiPcZfZijzGmiMSu8DUeOH+rwiTk/nW7Q8UVdY0pHApXIFddNm65jeWIedm/ma8nujVzREsoVaL1yPSb29aZW8em285GeBC5qhCRwAJ8yYJMEXg1PiL37sgnVz483TlxtPxg9K8q2Jz7A='
+      password: '{cipher}AQAcfKV2lXvgWrV8KJIC9YbiWIEHdPLQay7V8jsW+riCZRk5Yzt+5hn8dCKXfaam6S4W/btJiZFQ4bjYoqulwrjlyZ3MJDcu5o6AfezGuukNWKAhJFdBDBy1Km4Ngck4aDyQudBTXjHgtZUKhb9+k5iCskj8uvR2LgsFjdcwXqmqCOB6CN/skcbZCE89STtw68KEiWkEYQEeoIUI4OyFFbkGeuP+idHo74kZYBroiQrF2SSoyKsZ+IOxRYvtMC+gl9T4tHUJvLD7NSdes49CRZRtWgGDID3hpPzB5F7mb7PNkxIegEOlyO3dRIuLfqpExAuw+XAYxMvZMSloSFx9XeJNCzbR+pEv+BJqf4JxMqEc7OHPP0GOIJiyEkw3igfQcUw='
       database: homepage_v2_production
       port: 27017
       host: mongodb
