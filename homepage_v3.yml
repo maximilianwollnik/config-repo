@@ -1,0 +1,44 @@
+server:
+  port: 9000
+  error:
+    path: /error
+    
+spring:
+  data:
+    mongodb:
+      username: writer
+      password: '{cipher}AQAcfKV2lXvgWrV8KJIC9YbiWIEHdPLQay7V8jsW+riCZRk5Yzt+5hn8dCKXfaam6S4W/btJiZFQ4bjYoqulwrjlyZ3MJDcu5o6AfezGuukNWKAhJFdBDBy1Km4Ngck4aDyQudBTXjHgtZUKhb9+k5iCskj8uvR2LgsFjdcwXqmqCOB6CN/skcbZCE89STtw68KEiWkEYQEeoIUI4OyFFbkGeuP+idHo74kZYBroiQrF2SSoyKsZ+IOxRYvtMC+gl9T4tHUJvLD7NSdes49CRZRtWgGDID3hpPzB5F7mb7PNkxIegEOlyO3dRIuLfqpExAuw+XAYxMvZMSloSFx9XeJNCzbR+pEv+BJqf4JxMqEc7OHPP0GOIJiyEkw3igfQcUw='
+      database: homepage_v2_production
+      port: 27017
+      host: mongodb
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+
+logging:
+  level:
+    de:
+      maximilianwollnik:
+        homepage: INFO
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: development
+  data:
+    mongodb:
+      database: homepage_v2_development
+      port: 27017
+      host: serwol
+server:
+  port: 1234
+logging:
+  level:
+    de:
+      maximilianwollnik:
+        homepage: DEBUG
